@@ -34,7 +34,7 @@ a:hover {
 #sbimg img {
 			width: 150; !important;
 			height: 150; !important;
-			margin-top: 80 !important;
+			margin-top: 0 !important;
 			margin-bottom: 0 !important;
 }
 
@@ -52,7 +52,7 @@ a:hover {
 
 
 #header { 
-			position: fixed;
+			position: absolute;
 			top: 0px;
 			left: 200px;
 			right: 0px;
