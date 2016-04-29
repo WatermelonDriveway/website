@@ -7,13 +7,13 @@ body {
 }
 
 img {
-			width: 70%;
+			width: 40%;
 			margin-top: 120;
 			margin-bottom: 20;
 }
 
 video {
-			width: 70%;
+			width: 40%;
 			margin-top: 120;
 			margin-bottom: 20;
 }
@@ -34,15 +34,22 @@ a:hover {
 #sbimg img {
 			width: 150; !important;
 			height: 150; !important;
-			margin-top: 0 !important;
+			margin-top: 80 !important;
 			margin-bottom: 0 !important;
 }
 
 #simg img {
-			width: 50%;
+			width: 40%;
 			margin-top: 120;
 			margin-bottom: 20;
 }
+
+#ssimg img {
+			width: 30%;
+			margin-top: 120;
+			margin-bottom: 20;
+}
+
 
 #header { 
 			position: fixed;

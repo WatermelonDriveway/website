@@ -1,20 +1,34 @@
 <html>
 <link rel="stylesheet" type="text/css" href="style.css">
+
+
+<head>
+	
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<link rel="stylesheet" href="lightbox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="lightbox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$(".fancybox").fancybox();
+			});
+		</script>
+</head>
+
 	<body bgcolor="#e6e6e6">
+
 
 		
 	
-<!--	<div id="header">	--> 
-<!--		<h1>watermelon driveway</h1>	--> 
-<!--	</div>	--> 
+	<div id="header">
+			<h1>watermelon driveway</h1>
+		</div>
 	
 
 
 		<div id="parent">
 			<div id="sidebar">
 
-				<h1>watermelon driveway</h1>
-
+				
 					<div id="sbimg">
 						<img src="images/yeah.png">
 					</div>
@@ -38,50 +52,64 @@
 
 	
 			<div id="main-content">
-				
+
 				<p>
-					<img src="images/flier.png">
+
+					<a class="fancybox" href="images/flier.png"><img src="images/flier.png"></a>
 				<p>
 					Show Flyer
 				<p>
+
 				<video controls loop preload="auto">
 					<source src="videos/dance.mp4" type="video/mp4">
 				</video>
-				<p>
+
 				<video controls loop preload="auto">
 					<source src="videos/dancedrums.mp4" type="video/mp4">
 				</video>
 				<p>
-				<img src="images/psl.png">
+
+				<a class="fancybox" href="images/psl.png"><img src="images/psl.png"></a>
 				<p>
 				something
 				<p>
+
 					<div id="simg">
-						<img src="images/lawnwater2.jpg">
+						<a class="fancybox" href="images/lawnwater2.jpg"><img src="images/lawnwater2.jpg"></a>
+						<a class="fancybox" href="images/girl.jpg"><img src="images/girl.jpg"></a>
+						
 						<p>
-						Lawn Water 2 - front cover?
+						Lawn Water 2 covers
 						<p>
 					</div>
-				<img src="images/dogcomic.jpg">
+				<a class="fancybox" href="images/dogcomic.jpg"><img src="images/dogcomic.jpg"></a>
 				<p>
 				dog comic #1
 				<p>
-					<div id="simg">
-						<img src="images/albumartred.png">
+
+					<div id="ssimg">
+						<a class="fancybox" href="images/albumartred.png"><img src="images/albumartred.png"></a>
+
+						<a class="fancybox" href="images/albumartblue.png"><img src="images/albumartblue.png"></a>
+
+
+						<a class="fancybox" href="images/disccover.png"><img src="images/disccover.png"></a>
+
 						<p>
-						Lawn Water 1 - front cover
-						<p>
-						<img src="images/albumartblue.png">
-						<p>
-						Lawn Water 1 - back cover
-						<p>
-						<img src="images/disccover.png">
-						<p>
-						Lawn Water 1 - disc sticker
+						Lawn Water 1 covers and disc
 						<p>
 					</div>
 				</div>
 			</div>
 		</div>
+
+
+
+
+
+
 	</body>
+
+
+
 </html>
