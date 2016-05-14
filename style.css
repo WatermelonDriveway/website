@@ -76,6 +76,7 @@ table {
 
 img {
     width: 80%;
+    padding-top: 0px;
 }
 
 #sbimg img {
@@ -100,6 +101,8 @@ img {
     padding-top: 100px;
     width: 20%
 }
+
+
 
 
 
