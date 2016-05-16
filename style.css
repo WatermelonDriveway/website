@@ -1,5 +1,7 @@
-@font-face { font-family: Delicious; src: url('OpenSans-Regular.ttf'); } 
-@font-face { font-family: Delicious; font-weight: bold; src: url('OpenSans-Regular.otf'); }
+@font-face { 
+    font-family: Open Sans; 
+    src: url('OpenSans-Regular.ttf'); 
+} 
 
 body {
     padding    : 0;
