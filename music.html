@@ -5,6 +5,12 @@
     <title>watermelon driveway</title>
     
 
+
+
+
+
+
+
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <link rel="stylesheet" type="text/css" href="lightbox/source/jquery.fancybox.css?v=2.1.5" >
@@ -21,12 +27,32 @@
         $(".fancybox").fancybox();
         });
     </script>
+    <style>
+        .playlist{
+            list-style: none;
+            padding: 0;
+            background-color: e6e6e6;
+        }
+        .playlist li a{
+            color:black;
+            text-decoration: none;
+            text-align: left;
+        }
+        .playlist .current-song a{
+            color: #009BCA;
+        }
+        li {
+            padding: 0;
+            list-style-type: none;
+        }
+    </style>
 
 
-asdf
+
+
 </head>
 
-<body bgcolor="#e6e6e6">
+<body bgcolor="#e6e6e6" onload="PlayerLoaded()">
     
     <div id="header">
     
@@ -66,116 +92,71 @@ asdf
         <div id="main-content">
 
 
-<p style="border-bottom: 1px dashed; padding-bottom: 20px;">Stuff that I've abandoned or just don't know what to do with</p>
+            <p style="border-bottom: 1px dashed; padding-bottom: 20px;">Stuff that I've abandoned or just don't know what to do with</p>
+<div class="i3">
+<div align="center">
+
+        <p>
 
 
 
 
+ 
 
-                    
+ <table id="ti">
+  <tr>
+    <td colspan="2">album name</td>
+  </tr>
+  <tr>
+    <td><img src="images/oldsongs.jpg"></td>
+    <td>
+        <ul class="playlist">
+            <li><a data-song="song" href="audio/oldsongs/Lawn Water - Old Songs - 02.mp3">02</a></li>
+            <li><a data-song="song" href="audio/oldsongs/Lawn Water - Old Songs - 03.mp3">03</a></li>
+        </ul>
+    </td>
+  </tr>
+</table> 
 
 
 
 
+        <div id="footer">
+            <audio src="" controls id="audioPlayer">
+                Sorry, your browser doesn't support html5!
+            </audio>
+        </div>
 
 
+    <ul class="playlist">
+        <li><span id="im"><img src="images/om1.png"></span>
+        <li><strong>Class Projects</strong><p>
+        <li><a data-song="song" href="audio/class/babo.mp3">Babo Za Kade</a></li>
+        <li><a data-song="song" href="audio/class/reason2.mp3">Reason 2</a></li>
+        <li><a data-song="song" href="audio/class/reason2.mp3">Reason 2</a></li>
+        <li><a data-song="song" href="audio/class/lm.mp3">Logic Midterm</a></li>
+        <p>
+
+        <li><span id="im"><img src="images/oldsongs.jpg"></span>
+        <li><strong>Old Songs</strong><p>
+        <li><a data-song="song" href="audio/oldsongs/Lawn Water - Old Songs - 01.mp3">01</a></li>
+        <li><a data-song="song" href="audio/oldsongs/Lawn Water - Old Songs - 02.mp3">02</a></li>
+        <li><a data-song="song" href="audio/oldsongs/Lawn Water - Old Songs - 03.mp3">03</a></li>
+        <li><a data-song="song" href="audio/oldsongs/Lawn Water - Old Songs - 04.mp3">04</a></li>
+    </ul>
 
 
+</div>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+        
+    <script src="audioPlayer.js"></script>
+    <script>
+        // loads the audio player
+        audioPlayer();
+    </script>
+</div>
 
-                    <table align="center" border="0px">
-                    <tr>
-                        <td width="30%" rowspan=2>
-
-                            <img src="images/om1.png">
-
-                        </td>
-                        <td>
-
-                            Babo Za Kade
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-<audio id="player2" src="audio/babo.wav" type="audio/mp3" controls="controls">        
-</audio>  
-
-                        </td>
-                    </tr>
-                </table>
-                <p>
-                                <table align="center" border="0px">
-                    <tr>
-                        <td width="30%" rowspan=2>
-
-                            <img src="images/om2.png">
-
-                        </td>
-                        <td>
-
-                            Reason2
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            <audio controls>
-                            <source src="audio/reason2.wav" type="audio/wav"> Your browser does not support the audio element
-                            </audio>
-
-                        </td>
-                    </tr>
-                </table>                
-                <table align="center" border="0px">
-                    <tr>
-                        <td width="30%" rowspan=2>
-
-                            <img src="images/om3.png">
-
-                        </td>
-                        <td>
-
-                            Logic Midterm
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            <audio controls>
-                            <source src="audio/lm.wav" type="audio/wav"> Your browser does not support the audio element
-                            </audio>
-
-                        </td>
-                    </tr>
-                </table>
-                <p>
-                <table align="center" border="0px">
-                    <tr>
-                        <td width="30%" rowspan=2>
-
-                            <img src="images/om4.png">
-
-                        </td>
-                        <td>
-
-                            GM2
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            <audio controls>
-                            <source src="audio/gm2.wav" type="audio/wav"> Your browser does not support the audio element
-                            </audio>
-
-                        </td>
-                    </tr>
-                </table>
-
+</div>
 
 
         </div>
