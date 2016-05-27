@@ -138,7 +138,7 @@ td, th {
 
 #v1 video {
     margin-top: 100;
-    width: 200px;
+    width: 40%;
 }
 
 #v2 video {
@@ -149,7 +149,8 @@ td, th {
 
 
 audio {
-    width: 80%
+    width: 80%;
+    background-color: #f2f2f2;
 }
 
 
