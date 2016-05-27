@@ -69,7 +69,6 @@ body {
     margin: 0px;
     width: 300;
     height: 300;
-
     }
 
 .hidden {
@@ -116,21 +115,23 @@ img {
 
 
 table {
-    width     : 50%;
-    text-align: center;
-    padding-bottom: 100px;
+    display: inline-block;
+    width: 50%;
+    max-width: 50%;
+    text-align: left;
+    padding-bottom: 50;
+
 }
 
 #ti img {
     width:200px; height:auto;
 }
 
-tr {
-  height: 20px;
-}
+
 
 td, th {
-  width: 40px;
+  width: 50%;
+  padding: 20px;
 }
 
 
