@@ -1,0 +1,174 @@
+@font-face { 
+    font-family: Open Sans; 
+    src: url('OpenSans-Regular.ttf'); 
+} 
+
+body {
+    padding    : 0;
+    margin     : 0;
+    text-align : center;
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+    padding-top: 0;
+}
+
+#header {
+    position        : fixed;
+    top             : 0px;
+    left            : 0px;
+    right           : 0px;
+    height          : 90px;
+    background-color: #f2f2f2;
+}
+
+#sidebar {
+    position        : fixed;
+    text-align      : center;
+    padding-top     : 0;
+    top             : 0px;
+    left            : 0px;
+    bottom          : 0px;
+    width           : 200px;
+    background-color: #f2f2f2;
+}
+
+#parent {
+    margin-top      : 0px;
+    margin-bottom   : 120px;
+    margin-left     : 0px;
+    background-color: #e6e6e6;
+}
+
+#main-content {
+    margin-top: 100px;
+}
+
+
+#bottom {
+    position  : fixed;
+    bottom    : 20px;
+    text-align: center;
+    width     : 200px;
+    font-size : 12;
+}
+
+#footer {
+    text-align: center;
+    background:#f2f2f2;
+    width:100%;
+    height:30px;
+    position: relative;
+    bottom:0;
+    left:0px;
+    right: 0px;
+}
+
+
+#store div {
+    display: inline-block;
+    margin: 0px;
+    width: 300;
+    height: 300;
+    }
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+img {
+    width: 80%;
+    margin-top: 30px;
+}
+
+#sbimg img {
+    width        : 50 !important;
+    height       : 50 !important;
+    margin-top   : 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#i1 img {
+    margin-top: 100px;
+    width: 40%
+}
+
+#i2 img {
+    margin-top: 100px;
+    width: 30%
+}
+
+#i3 img {
+    margin-top: 100px;
+    width: 20%
+}
+
+#im img {
+    width: 20%
+}
+
+
+
+table {
+    display: inline-block;
+    width: 50%;
+    max-width: 50%;
+    text-align: left;
+    padding-bottom: 50;
+
+}
+
+#ti img {
+    width:200px; height:auto;
+}
+
+
+
+td, th {
+  width: 50%;
+  padding: 20px;
+}
+
+
+
+#v1 video {
+    margin-top: 100;
+    width: 40%;
+}
+
+#v2 video {
+    margin-top: 100;
+    width: 30%;
+}
+
+
+
+audio {
+    width: 80%;
+    background-color: #f2f2f2;
+}
+
+
+
+a:link {
+    color          : #000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+}
+
+a:hover {
+    color: #009BCA;
+}
+
+.currentLink {
+    color: #009BCA;
+}
+
