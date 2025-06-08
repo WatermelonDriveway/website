@@ -19,20 +19,29 @@ body {
   background: #151515;
   line-height: 1.5;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 #space {
-  padding: 70px;
+  padding: 00px;
 }
 
 #links {
   color: #57698B;
-  cursor: pointer;
-  display: flex;
-  font-family: 'jonsans', serif;
-  justify-content: center;
-  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding-top: 20px;
+  padding-left: 500px;
+  padding-right: 500px;
+
+
+  font-family: 'Arial', serif;
+  justify-items: center;
+  align-content: center;
+  margin-top: 0px;
 }
 
 #red {
@@ -49,16 +58,18 @@ body {
 
 #links .box {
   background-color: #151515;
-  margin: 0px 20px 0px 20px;
+  width: 90%;
+
   padding: 10px 10px 10px 10px;
   outline: #3C3B41;
   outline-style: solid;
-  outline-width: 0px;
+  outline-width: 1px;
 }
 
 #links .box h2 {
   text-align: center;
   margin-bottom: 5px;
+  font-size: 20px;
 }
 
 #links .box .list ul {
@@ -89,45 +100,26 @@ body {
 
 <body onload="startpage();">
 
-<div id="space"></div>
+
 <div id="links">
 <div class="box">
   <div class="list">
     <ul>
+      <h2>trackers</h2>
       <li><a href="https://redacted.sh/"><div id="red">redacted</div></a></li>
       <li><a href="https://orpheus.network/">orpheus</a></li>
-
-        <br>
-      <li><a href="https://passthepopcorn.me/">passthepopcorn</a></li>
+      <li><a href="https://passthepopcorn.me/"><div id="red">passthepopcorn</div></a></li>
       <li><a href="https://broadcasthe.net/"><div id="red">broadcasthenet</div></a></li>
       <li><a href="https://hdbits.org/"><div id="hdb">hdbits</div></a></li>
-      
-      
-
       <li><a href="https://www.empornium.is/">empornium</a></li>
-
-        <br>
-     
       <li><a href="https://ianon.app/"><div id="red">ianon</div></a></li>
-      <li><a href="https://brokenstones.is/"><div id="red">brokenstones</div></a></li>
-
-        <br>
-      
+      <li><a href="https://brokenstones.is/">brokenstones</a></li>
       <li><a href="https://audionews.org/index.php">audionews</a></li>
       <li><a href="https://proaudiotorrents.org/">proaudiotorrents</a></li>
-
-        <br>
-      
       <li><a href="https://www.torrentleech.org">torrentleech</a></li>
       <li><a href="https://filelist.io/">filelist</a></li>
-      
-      
-        <br>
       <li><a href="https://gazellegames.net/">gazellegames</a></li>
-
-        <br>
       <li><a href="https://bibliotik.me/">bibliotik</a></li>
-        <br>
       <li><a href="https://trackerstatus.info/">tracker status</a></li>
     </ul>
   </div>
@@ -136,21 +128,33 @@ body {
 <div class="box">
   <div class="list">
     <ul>
-
-
+      <h2>forums</h2>
       <li><a href="http://boards.4chan.org/g/"><div id="red">4ch</div></a></li>
-      <li><a href="https://aftertheinter.net/topics/1">ati</a></li>
-        <br>
+      <br>
       <li><a href="https://old.reddit.com/">front</a></li>
       <li><a href="https://old.reddit.com/user/mrfebrezeman360/m/ableton/"><div id="red">m/ableton</div></a></li>
-        <br>
+      <br>
+      <li><a href="https://aftertheinter.net/topics/1">leulinks</a></li>
+      <br>
       <li><a href="http://forum.phish.net/forum"><div id="red">phishnet</div></a></li>
-        <br>
+      <br>
       <li><a href="https://forum.keyosc.com/"><div id="red">keyosc</div></a></li>
-      <li><a href="https://vi-control.net/community/"><div id="red">vi-control</div></a></li>
-      <li><a href="https://www.elektronauts.com/categories"><div id="red">elektronauts</div></a></li>
+      <li><a href="https://vi-control.net/community/">vi-control</a></li>
+      <li><a href="https://www.elektronauts.com/categories">elektronauts</a></li>
+
       
-        <br>
+      
+      
+      
+
+    </ul>
+  </div>
+</div>
+
+<div class="box">
+  <div class="list">
+    <ul>
+      <h2>music</h2>
       <li><a href="https://www.hearingthings.co/reviews/">hearing things</a></li>
       <li><a href="https://www.thewire.co.uk/home/">the wire</a></li>
       <li><a href="https://thequietus.com/">the quietus</a></li>
@@ -162,10 +166,28 @@ body {
       <li><a href="https://www.nme.com/">nme</a></li>
       <li><a href="https://www.stereogum.com/">stereogum</a></li>
       <li><a href="https://diymag.com/">diymag</a></li>
-      
-      
-      
-      
+
+
+    
+    </ul>
+  </div>
+</div>
+
+<div class="box">
+  <div class="list">
+    <ul>
+      <h2>social</h2>
+      <li><a href="https://www.gmail.com/"><div id="red">gmail</div></a></li>
+      <br>
+      <li><a href="https://www.facebook.com/">facebook</a></li>
+      <li><a href="https://www.messenger.com/">messenger</a></li>
+      <li><a href="https://www.instagram.com/"><div id="red">instagram</div></a></li>
+      <br>
+      <li><a href="https://letterboxd.com/">letterboxd</a></li>
+      <li><a href="https://rateyourmusic.com/"><div id="red">rym</div></a></li>
+      <li><a href="https://www.last.fm/user/jsamataro">lastfm</a></li>
+
+  
 
     </ul>
   </div>
@@ -174,23 +196,14 @@ body {
 <div class="box">
   <div class="list">
     <ul>
-      <li><a href="https://www.facebook.com/">facebook</a></li>
-      <li><a href="https://www.messenger.com/">messenger</a></li>
-      <li><a href="https://www.instagram.com/">instagram</a></li>
-      <li><a href="https://www.last.fm/user/jsamataro">lastfm</a></li>
-      <li><a href="https://www.gmail.com/"><div id="red">gmail</div></a></li>
-        <br>
-
-      <li><a href="https://www.netflix.com/browse"><div id="red">netflix</div></a></li>
-
-        <br>
-      <li><a href="https://ddnet.tw/">ddnet</a></li>
-      <li><a href="https://ddnet.tw/players/tela/">ddnet - tela</a></li>
-      <li><a href="https://ddnet.tw/ranks/usa/">ddnet - USA ranks</a></li>
-      <li><a href="https://ddnet.tw/settingscommands/">ddnet - settings & commands</a></li> 
-      <li><a href="https://ddnet.tw/214af427g8h.php">ddnet - tee historian old</a></li>
-      <li><a href="https://ddnet.org/teehistorian2demo.php">ddnet - tee historian</a></li>
-      <li><a href="https://github.com/ddnet/ddnet/issues">ddnet - github issues</a></li>
+      <h2>ddnet</h2>
+      <li><a href="https://ddnet.tw/">home</a></li>
+      <li><a href="https://ddnet.tw/players/tela/"><div id="red">tela</div></a></li>
+      <li><a href="https://ddnet.tw/ranks/usa/">USA ranks</a></li>
+      <li><a href="https://ddnet.tw/settingscommands/"><div id="red">settings & commands</div></a></li> 
+      <li><a href="https://ddnet.tw/214af427g8h.php">tee historian old</a></li>
+      <li><a href="https://ddnet.org/teehistorian2demo.php">tee historian</a></li>
+      <li><a href="https://github.com/ddnet/ddnet/issues">github issues</a></li>
       
   
 
@@ -200,23 +213,20 @@ body {
 
 <div class="box">
   <div class="list">
-    <ul>        
-      <br>
+    <ul>
+      <h2>other</h2>    
       <li><a href="https://secure.comed.com/MyAccount/MyBillUsage/pages/secure/MyBillUsage.aspx">comed</a></li>
-      <li><a href="https://customer.xfinity.com/#/?CMP=ILC_signin_myxfinity_re
-">xfinity</a></li>
-      <li><a href="https://docs.google.com/spreadsheets/u/0/"><div id="red">google sheets</div></a></li>
+      <li><a href="https://customer.xfinity.com/#/?CMP=ILC_signin_myxfinity_re">xfinity</a></li>
+      <br>
       <li><a href="https://login.hsimon.com/Home">TDI - paychecks</a></li>
       <li><a href="https://app.rippling.com/dashboard">planHub - rippling</a></li>
-      
-        <br>
+      <br>
       <li><a href="https://hemera.feralhosting.com/jonxfm/rutorrent/">rutorrent</a></li>
       <li><a href="https://www.feralhosting.com/slots/hemera/jonxfm/">feral</a></li>
       <li><a href="https://localhost:8384/">syncthing-local</a></li>
       <li><a href="https://hemera.feralhosting.com/jonxfm/syncthing/">syncthing-feral</a></l>
       <li><a href="http://47.87.201.83:8384/">syncthing-virmach</a></l>
-          <br>
-      <li><a href="http://about:config">about:config</a></li>
+      <br><br>
       <li><a href="http://192.168.0.1">router</a></li>
       <li><a href="https://github.com/WatermelonDriveway/website/edit/gh-pages/startpage.html"><div id="red">edit</div></a></li>
     </ul>
