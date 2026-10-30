@@ -1,101 +1,107 @@
 <!DOCTYPE html>
 
 <style type="text/css">
-  
-@font-face { 
-    font-family: jonsans; 
-    src: url('DejaVuSansMono.ttf'); 
-} 
+	
+@font-face {
+	font-family: 'JetBrains Mono';
+	url('./JetBrainsMono-Regular.ttf') format('truetype'); 
+	font-weight: 400;
+	font-style: normal;
+}
+
 
 * {
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;w
+	font-family: 'JetBrains Mono', monospace;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;w
 }
 
 body {
-  font-size: 10pt;
-  background: #151515;
-  line-height: 1.5;
-  margin: 0;
-  padding: 10px;
+	font-size: 10pt;
+	background: #222;
+	line-height: 1.5;
+	margin: 0;
+	padding: 10px;
 }
 
 #space {
-  padding: 00px;
+	padding: 00px;
 }
 
 #links {
-  color: #57698B;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  padding-top: 20px;
-  padding-left: 500px;
-  padding-right: 500px;
-
-
-  font-family: 'Arial', serif;
-  justify-items: center;
-  align-content: center;
-  margin-top: 0px;
+	color: #57698B;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto;
+	grid-column-gap: 40px;
+	grid-row-gap: 20px;
+	padding-top: 0px;
+	padding-left: 200px;
+	padding-right: 200px;
+	font-family: 'Arial', serif;
+	justify-items: center;
+	align-content: center;
+	margin-top: 0px;
 }
 
 #red {
-  color: #6883bf;
+	color: #72809e;
 }
 
 #red:hover {
-  color: #ef95c2;
+	color: #fbc4df;
 }
 
 #links .selection {
-  text-align: center;
+	text-align: center;
 }
 
 #links .box {
-  background-color: #151515;
-  width: 90%;
+//	background-color: #292828;
+	width: 100%;
 
-  padding: 10px 10px 10px 10px;
-  outline: #3C3B41;
-  outline-style: solid;
-  outline-width: 1px;
+	padding: 10px 10px 10px 10px;
+//	outline: #dedede;
+//	outline-style: solid;
+//	outline-width: 1px;
+//	box-shadow: -1px -1px red;
 }
 
 #links .box h2 {
-  text-align: center;
-  margin-bottom: 5px;
-  font-size: 20px;
+	text-align: left;
+	margin-bottom: 5px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	color: #d05050;
 }
 
 #links .box .list ul {
-  list-style: none;
-  margin-top: 5px;
-  margin-right: 30px;
+	list-style: none;
+	margin-top: 5px;
+	margin-right: 30px;
 }
 
 #links .box .list ul li a {
-  color: #c5cfe0;
-  text-decoration: none;
+	color: #dedede;
+	text-decoration: none;
 
 }
 
 #links .box .list ul li a:hover {
-  color: #ef95c2;
+	color: #ef95c2;
 }
+
 
 </style>
 
 <html>
 
 <head>
-  <link rel="shortcut icon" type="image/png" href="fav.png"/>
-  <title>start page</title>
-  <meta charset="utf-8" />
+	<link rel="shortcut icon" type="image/png" href="./fav.png"/>
+	<title>start page</title>
+	<meta charset="utf-8" />
 </head>
 
 <body onload="startpage();">
@@ -103,151 +109,166 @@ body {
 
 <div id="links">
 <div class="box">
-  <div class="list">
-    <ul>
-      <h2>trackers</h2>
-      <li><a href="https://redacted.sh/"><div id="red">redacted</div></a></li>
-      <li><a href="https://orpheus.network/">orpheus</a></li>
-      <li><a href="https://passthepopcorn.me/"><div id="red">passthepopcorn</div></a></li>
-      <li><a href="https://broadcasthe.net/"><div id="red">broadcasthenet</div></a></li>
-      <li><a href="https://hdbits.org/"><div id="hdb">hdbits</div></a></li>
-      <li><a href="https://www.empornium.sx/">empornium</a></li>
-      <li><a href="https://ianon.app/"><div id="red">ianon</div></a></li>
-      <li><a href="https://brokenstones.is/">brokenstones</a></li>
-      <li><a href="https://audionews.org/index.php">audionews</a></li>
-      <li><a href="https://proaudiotorrents.org/">proaudiotorrents</a></li>
-      <li><a href="https://www.torrentleech.org">torrentleech</a></li>
-      <li><a href="https://filelist.io/">filelist</a></li>
-      <li><a href="https://gazellegames.net/">gazellegames</a></li>
-      <li><a href="https://bibliotik.me/">bibliotik</a></li>
-      <li><a href="https://www.myanonamouse.net/">myanonamouse</a></li>
-      <li><a href="https://trackerstatus.info/">tracker status</a></li>
-    </ul>
-  </div>
+	<div class="list">
+	<ul>
+		<h2>trackers</h2>
+		<li><a href="https://redacted.sh/"><div id="red">redacted</div></a></li>
+		<li><a href="https://orpheus.network/">orpheus</a></li>
+		<li><a href="https://passthepopcorn.me/"><div id="red">passthepopcorn</div></a></li>
+		<li><a href="https://broadcasthe.net/"><div id="red">broadcasthenet</div></a></li>
+		<li><a href="https://hdbits.org/"><div id="hdb">hdbits</div></a></li>
+		<li><a href="https://www.empornium.sx/">empornium</a></li>
+		<li><a href="https://ianon.app/"><div id="red">ianon</div></a></li>
+		<li><a href="https://brokenstones.is/">brokenstones</a></li>
+		<li><a href="https://audionews.org/index.php">audionews</a></li>
+		<li><a href="https://proaudiotorrents.org/">proaudiotorrents</a></li>
+		<li><a href="https://www.torrentleech.org">torrentleech</a></li>
+		<li><a href="https://filelist.io/">filelist</a></li>
+		<li><a href="https://gazellegames.net/">gazellegames</a></li>
+		<li><a href="https://bibliotik.me/">bibliotik</a></li>
+		<li><a href="https://www.myanonamouse.net/">myanonamouse</a></li>
+		<li><a href="https://trackerstatus.info/">tracker status</a></li>
+	</ul>
+	</div>
 </div>
 
 <div class="box">
-  <div class="list">
-    <ul>
-      <h2>forums</h2>
-      <li><a href="http://boards.4chan.org/lit/"><div id="red">/lit/</div></a></li>
-      <br>
-      <li><a href="https://old.reddit.com/">front</a></li>
-      <li><a href="https://old.reddit.com/user/mrfebrezeman360/m/ableton/"><div id="red">m/ableton</div></a></li>
-      <br>
-      <li><a href="https://aftertheinter.net/topics/1">leulinks</a></li>
-      <br>
-      <li><a href="http://forum.phish.net/forum"><div id="red">phishnet</div></a></li>
-      <br>
-      <li><a href="https://forum.keyosc.com/"><div id="red">keyosc</div></a></li>
-      <li><a href="https://vi-control.net/community/">vi-control</a></li>
-      <li><a href="https://www.elektronauts.com/categories">elektronauts</a></li>
-
-      
-      
-      
-      
-
-    </ul>
-  </div>
+	<div class="list">
+	<ul>
+		<h2>forums</h2>
+		<li><a href="http://boards.4chan.org/lit/"><div id="red">/lit/</div></a></li>
+		<br>
+		<li><a href="https://old.reddit.com/">front</a></li>
+		<li><a href="https://old.reddit.com/user/mrfebrezeman360/m/ableton/"><div id="red">m/ableton</div></a></li>
+		<br>
+		<li><a href="https://aftertheinter.net/topics/1">leulinks</a></li>
+		<br>
+		<li><a href="http://forum.phish.net/forum"><div id="red">phishnet</div></a></li>
+		<br>
+		<li><a href="https://forum.keyosc.com/"><div id="red">keyosc</div></a></li>
+		<li><a href="https://vi-control.net/community/">vi-control</a></li>
+		<li><a href="https://www.elektronauts.com/categories">elektronauts</a></li>
+	</ul>
+	</div>
 </div>
 
 <div class="box">
-  <div class="list">
-    <ul>
-      <h2>music</h2>
-      <li><a href="https://www.hearingthings.co/reviews/">hearing things</a></li>
-      <li><a href="https://www.thewire.co.uk/home/">the wire</a></li>
-      <li><a href="https://thequietus.com/">the quietus</a></li>
-      <li><a href="https://pitchfork.com">pitchy</a></li>
-      <li><a href="https://brainwashed.com/">brainwashed</a></li>
-      <li><a href="https://www.thefader.com/music">fader</a></li>
-      <li><a href="https://www.factmag.com/category/magazine/">factmag</a></li>
-      <li><a href="https://dmy.co/">dmy</a></li>
-      <li><a href="https://www.nme.com/">nme</a></li>
-      <li><a href="https://www.stereogum.com/">stereogum</a></li>
-      <li><a href="https://diymag.com/">diymag</a></li>
-      <li><a href="https://consequence.net/">consequence of sound</a></li>
-      <li><a href="https://www.albumoftheyear.org/">aoty</a></li>
-      <li><a href="https://hypem.com/popular">hypemachine</a></li>
-      
+	<div class="list">
+	<ul>
+		<h2>music</h2>
+		<li><a href="https://www.hearingthings.co/reviews/">hearing things</a></li>
+		<li><a href="https://www.thewire.co.uk/home/">the wire</a></li>
+		<li><a href="https://thequietus.com/">the quietus</a></li>
+		<li><a href="https://pitchfork.com">pitchy</a></li>
+		<li><a href="https://brainwashed.com/">brainwashed</a></li>
+		<li><a href="https://www.thefader.com/music">fader</a></li>
+		<li><a href="https://www.factmag.com/category/magazine/">factmag</a></li>
+		<li><a href="https://dmy.co/">dmy</a></li>
+		<li><a href="https://www.nme.com/">nme</a></li>
+		<li><a href="https://www.stereogum.com/">stereogum</a></li>
+		<li><a href="https://diymag.com/">diymag</a></li>
+		<li><a href="https://consequence.net/">consequence of sound</a></li>
+		<li><a href="https://www.albumoftheyear.org/">aoty</a></li>
+		<li><a href="https://hypem.com/popular">hypemachine</a></li>
+	</ul>
+	</div>
+</div>
 
 
-    
-    </ul>
-  </div>
+<div class="box">
+	<div class="list">
+	<ul>
+		<h2>social</h2>
+		<li><a href="https://www.gmail.com/"><div id="red">gmail</div></a></li>
+		<br>
+		<li><a href="https://www.facebook.com/">facebook</a></li>
+		<li><a href="https://www.messenger.com/">messenger</a></li>
+		<li><a href="https://www.instagram.com/"><div id="red">instagram</div></a></li>
+		<br>
+		<li><a href="https://bsky.app/"><div id="red">bluesky</div></a></li>
+		<br>
+		<li><a href="https://www.youtube.com/"><div id="red">youtube</div></a></li>
+
+	</ul>
+	</div>
+</div>
+
+
+
+<div class="box">
+	<div class="list">
+	<ul>
+		<h2>media</h2>
+		<li><a href="https://letterboxd.com/">letterboxd</a></li>
+		<li><a href="https://rateyourmusic.com/"><div id="red">rym</div></a></li>
+		<br>
+		<li><a href="https://www.goodreads.com/">goodreads</a></li>
+		<li><a href="https://app.thestorygraph.com/community">storygraph</a></li>
+		<li><a href="https://www.librarything.com/">librarything</a></li>
+		<li><a href="https://www.chipublib.org/">chicago public library</a></li>
+		<br>
+		<li><a href="https://www.last.fm/user/jsamataro">lastfm</a></li>
+	</ul>
+	</div>
 </div>
 
 <div class="box">
-  <div class="list">
-    <ul>
-      <h2>social</h2>
-      <li><a href="https://www.gmail.com/"><div id="red">gmail</div></a></li>
-      <br>
-      <li><a href="https://www.facebook.com/">facebook</a></li>
-      <li><a href="https://www.messenger.com/">messenger</a></li>
-      <li><a href="https://www.instagram.com/"><div id="red">instagram</div></a></li>
-      <br>
-      <li><a href="https://letterboxd.com/">letterboxd</a></li>
-      <li><a href="https://rateyourmusic.com/"><div id="red">rym</div></a></li>
-      <br>
-      <li><a href="https://www.goodreads.com/">goodreads</a></li>
-      <li><a href="https://app.thestorygraph.com/community">storygraph</a></li>
-      <li><a href="https://www.librarything.com/">librarything</a></li>
-      <li><a href="https://www.chipublib.org/">chicago public library</a></li>
-      <br>
-      <li><a href="https://www.last.fm/user/jsamataro">lastfm</a></li>
+	<div class="list">
+	<ul>
+		<h2>ddnet</h2>
+		<li><a href="https://ddnet.tw/">home</a></li>
+		<li><a href="https://ddnet.tw/players/tela/"><div id="red">tela</div></a></li>
+		<li><a href="https://ddnet.tw/ranks/usa/">USA ranks</a></li>
+		<li><a href="https://ddnet.tw/settingscommands/"><div id="red">settings & commands</div></a></li> 
+		<li><a href="https://ddnet.tw/214af427g8h.php">tee historian old</a></li>
+		<li><a href="https://ddnet.org/teehistorian2demo.php">tee historian</a></li>
+		<li><a href="https://github.com/ddnet/ddnet/issues">github issues</a></li>
+		
+	
 
-  
+	</ul>
+	</div>
+</div>
 
-    </ul>
-  </div>
+
+<div class="box">
+	<div class="list">
+	<ul>
+		<h2>bills/work</h2>	
+		<li><a href="https://www.peoplesgasdelivery.com/accountsummary/view/BillHistory?&acct=prgkpE%2blQAoTKqtu0Qdhxv5YWBTLdzwW1K%2bMXBdqvW4%3d">people's gas</a></li>
+		<li><a href="https://secure.comed.com/MyAccount/MyBillUsage/Pages/Secure/AccountHistory.aspx">comed</a></li>
+		<li><a href="https://customer.xfinity.com/billing/services">xfinity</a></li>
+		<br>
+		<li><a href="https://app.slack.com/client/T0DMJKX98/C087LGTBKGA">slack web app</a></li>
+		<br>
+		<li><a href="https://login.hsimon.com/Home">TDI - paychecks</a></li>
+		<li><a href="https://app.rippling.com/dashboard">planHub - rippling</a></li>
+		<br>
+		<li><a href="https://github.com/WatermelonDriveway/website/edit/gh-pages/startpage.html"><div id="red">edit</div></a></li>
+	</ul>
+	</div>
 </div>
 
 <div class="box">
-  <div class="list">
-    <ul>
-      <h2>ddnet</h2>
-      <li><a href="https://ddnet.tw/">home</a></li>
-      <li><a href="https://ddnet.tw/players/tela/"><div id="red">tela</div></a></li>
-      <li><a href="https://ddnet.tw/ranks/usa/">USA ranks</a></li>
-      <li><a href="https://ddnet.tw/settingscommands/"><div id="red">settings & commands</div></a></li> 
-      <li><a href="https://ddnet.tw/214af427g8h.php">tee historian old</a></li>
-      <li><a href="https://ddnet.org/teehistorian2demo.php">tee historian</a></li>
-      <li><a href="https://github.com/ddnet/ddnet/issues">github issues</a></li>
-      
-  
-
-    </ul>
-  </div>
+	<div class="list">
+	<ul>
+		<h2>custom</h2>	
+		<li><a href="https://hemera.feralhosting.com/jonxfm/rutorrent/">rutorrent</a></li>
+		<li><a href="https://www.feralhosting.com/slots/hemera/jonxfm/">feral</a></li>
+		<li><a href="https://billing.dedirock.com/clientarea.php">dedirock VPS</a></li>
+		<li><a href="https://localhost:8384/">syncthing-local</a></li>
+		<li><a href="https://hemera.feralhosting.com/jonxfm/syncthing/">syncthing-feral</a></l>
+		<li><a href="http://47.87.201.83:8384/">syncthing-virmach</a></l>
+		<br><br>
+		<li><a href="http://192.168.0.1">router</a></li>
+		<li><a href="https://github.com/WatermelonDriveway/website/edit/gh-pages/startpage.html"><div id="red">edit</div></a></li>
+	</ul>
+	</div>
 </div>
 
-<div class="box">
-  <div class="list">
-    <ul>
-      <h2>other</h2>    
-      <li><a href="https://www.peoplesgasdelivery.com/accountsummary/view/BillHistory?&acct=prgkpE%2blQAoTKqtu0Qdhxv5YWBTLdzwW1K%2bMXBdqvW4%3d">people's gas</a></li>
-      <li><a href="https://secure.comed.com/MyAccount/MyBillUsage/Pages/Secure/AccountHistory.aspx">comed</a></li>
-      <li><a href="https://customer.xfinity.com/billing/services">xfinity</a></li>
-      <br>
-      <li><a href="https://app.slack.com/client/T0DMJKX98/C087LGTBKGA">slack web app</a></li>
-      <br>
-      <li><a href="https://login.hsimon.com/Home">TDI - paychecks</a></li>
-      <li><a href="https://app.rippling.com/dashboard">planHub - rippling</a></li>
-      <br>
-      <li><a href="https://hemera.feralhosting.com/jonxfm/rutorrent/">rutorrent</a></li>
-      <li><a href="https://www.feralhosting.com/slots/hemera/jonxfm/">feral</a></li>
-      <li><a href="https://billing.dedirock.com/clientarea.php">dedirock VPS</a></li>
-      <li><a href="https://localhost:8384/">syncthing-local</a></li>
-      <li><a href="https://hemera.feralhosting.com/jonxfm/syncthing/">syncthing-feral</a></l>
-      <li><a href="http://47.87.201.83:8384/">syncthing-virmach</a></l>
-      <br><br>
-      <li><a href="http://192.168.0.1">router</a></li>
-      <li><a href="https://github.com/WatermelonDriveway/website/edit/gh-pages/startpage.html"><div id="red">edit</div></a></li>
-    </ul>
-  </div>
-</div>
+
 
 </div>
 </body>
 </html>
+
